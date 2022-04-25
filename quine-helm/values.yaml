@@ -4,7 +4,7 @@ name: quine
 replicaCount: 1
 
 image:
-  repository: thatdot/quine
+  repository: 709825985650.dkr.ecr.us-east-1.amazonaws.com/thatdot/quine-oss
   pullPolicy: IfNotPresent
   tag: "latest"
   
