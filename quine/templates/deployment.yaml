@@ -25,23 +25,11 @@ spec:
             httpGet:
               path: /api/v1/admin/readiness
               port: 8080
-            initialDelaySeconds: 10
+            initialDelaySeconds: 30
             periodSeconds: 3
           livenessProbe:
             httpGet:
               path: /api/v1/admin/liveness
               port: 8080
-            initialDelaySeconds: 10
+            initialDelaySeconds: 30
             periodSeconds: 3
-          command: ["java","-XX:+AlwaysPreTouch","-XX:+UseParallelGC","-XX:InitialRAMPercentage=40.0","-XX:MaxRAMPercentage=80.0","-Dconfig.file=/config/quine.conf","-jar","/quine-1.1.2.jar"]
-          volumeMounts:
-          - name: config
-            mountPath: /config
-            readOnly: true
-      volumes:
-      - name: config
-        configMap: 
-          name: quine-config
-          items:
-          - key: "quine.conf"
-            path: "quine.conf"

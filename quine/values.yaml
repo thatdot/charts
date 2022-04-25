@@ -1,7 +1,4 @@
 # Default values for Quine.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
-
 name: quine
 
 replicaCount: 1
@@ -17,6 +14,3 @@ service:
   externalPort: 8080
   internalPort: 8080
 
-quine-cassandra:
-  maxHeapSize: 2G
-  newHeapSize: 1G

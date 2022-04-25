@@ -9,9 +9,3 @@ maintainers:
 keywords:
 - streaming graph
 home: https://quine.io
-
-dependencies:
-- name: cassandra
-  version: 9.1.16
-  repository: https://charts.bitnami.com/bitnami
-
