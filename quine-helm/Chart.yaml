@@ -1,0 +1,11 @@
+apiVersion: v2
+name: quine-helm
+description: Helm chart for Quine
+
+version: 0.1.0
+maintainers:
+- name: Josh Cody
+  email: josh@thatdot.com
+keywords:
+- streaming graph
+home: https://quine.io
